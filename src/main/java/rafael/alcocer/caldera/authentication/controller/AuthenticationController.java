@@ -51,12 +51,12 @@ public class AuthenticationController {
 
         if (passwordEncoder.matches(loginRequest.getPassword(), userDetails.getPassword())) {
             // correct!
-            System.out.println("##### CORRECT...");
+            System.out.println("##### CORRECT PASSWORD...");
             return new ResponseEntity<>(userDetails, HttpStatus.OK);
         } else {
             // bad login!
-            System.out.println("##### INCORRECT...");
-            return new ResponseEntity<>(null, HttpStatus.UNAUTHORIZED);
+            System.out.println("##### INCORRECT PASSWORD...");
+            return new ResponseEntity<>("{\n    \"message\":\n    \"INCORRECT PASSWORD, but you must not say this... what I put here is for didactic purposes...\"\n}", HttpStatus.UNAUTHORIZED);
         }
     }
 }
