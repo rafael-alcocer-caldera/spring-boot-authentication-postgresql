@@ -114,6 +114,14 @@ Eclipse Console:
 &#35;&#35;&#35;&#35;&#35; CORRECT PASSWORD...
 
 
+##### LoginController... username: admin
+##### LoginController... password: adminX
+##### userDetails.getUsername(): admin
+##### userDetails.getPassword(): $2a$10$iERtlO0Q.Dn8qX5fv/eIROdZDFMXCDZAy2R7TUcWXYVojtlYNGf0i
+##### userDetails.getAuthorities(): [ROLE_ADMIN]
+##### INCORRECT PASSWORD...
+
+
 
 ## License
 
