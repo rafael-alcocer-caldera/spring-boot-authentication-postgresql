@@ -63,7 +63,7 @@ Eclipse Console:
 
 &#35;&#35;&#35;&#35;&#35; userDetails.getAuthorities(): [ROLE_ADMIN]
 
-&#35;&#35;&#35;&#35;&#35; CORRECT...
+&#35;&#35;&#35;&#35;&#35; CORRECT PASSWORD...
 
 
 MOD USER
@@ -111,7 +111,7 @@ Eclipse Console:
 
 &#35;&#35;&#35;&#35;&#35; userDetails.getAuthorities(): [ROLE_MODERATOR]
 
-&#35;&#35;&#35;&#35;&#35; CORRECT...
+&#35;&#35;&#35;&#35;&#35; CORRECT PASSWORD...
 
 
 
