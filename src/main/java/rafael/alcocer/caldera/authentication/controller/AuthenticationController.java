@@ -24,20 +24,17 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import lombok.RequiredArgsConstructor;
 import rafael.alcocer.caldera.authentication.payload.request.AuthenticationRequest;
 import rafael.alcocer.caldera.authentication.services.UserDetailsServiceImpl;
 
+@RequiredArgsConstructor
 @RestController
 @RequestMapping("/api/auth")
 public class AuthenticationController {
 
     private final UserDetailsServiceImpl userDetailsService;
     private final BCryptPasswordEncoder passwordEncoder;
-
-    public AuthenticationController(UserDetailsServiceImpl userDetailsService, BCryptPasswordEncoder passwordEncoder) {
-        this.userDetailsService = userDetailsService;
-        this.passwordEncoder = passwordEncoder;
-    }
 
     @PostMapping("/login")
     public ResponseEntity<?> login(@RequestBody AuthenticationRequest loginRequest) {
