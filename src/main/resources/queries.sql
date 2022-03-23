@@ -3,10 +3,10 @@ INSERT INTO roles(name) VALUES('ROLE_MODERATOR');
 INSERT INTO roles(name) VALUES('ROLE_ADMIN');
 
 
-INSERT INTO users(email, username, "password") VALUES('admin@admin.com', 'admin', 'admin');
-INSERT INTO users(email, username, "password") VALUES('user1@user1.com', 'user1', 'user1');
-INSERT INTO users(email, username, "password") VALUES('user2@user2.com', 'user2', 'user2');
-INSERT INTO users(email, username, "password") VALUES('mod@mod.com', 'mod', 'mod');
+INSERT INTO users(email, username, "password") VALUES('admin@admin.com', 'admin', '$2a$10$iERtlO0Q.Dn8qX5fv/eIROdZDFMXCDZAy2R7TUcWXYVojtlYNGf0i');
+INSERT INTO users(email, username, "password") VALUES('user1@user1.com', 'user1', '$2a$10$06bMDbkmPcixDpp4BsnB.usGNgJJQzWmSvYSgbDhPCGFa3Lcpnl4i');
+INSERT INTO users(email, username, "password") VALUES('user2@user2.com', 'user2', '$2a$10$bVv4Z0PVauPKJNuK44y6YO.GLQzSMAj7YkyWnAK9CNJGQHmeQZrEC');
+INSERT INTO users(email, username, "password") VALUES('mod@mod.com', 'mod', '$2a$10$hAvV5OaSAT1lhVR3vnV8KOohS2vnnD4yZV9Jh.lEtKgVD2iGEaiwm');
 
 
 INSERT INTO user_roles (user_id, role_id) VALUES(1, 3);
